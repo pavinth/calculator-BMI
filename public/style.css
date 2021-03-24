@@ -9,16 +9,16 @@ body {
 }
 
 .body--underweight {
-  background-color: #d74e73;
+  background-color: #be6079;
 }
 .body--normal {
-  background-color: #4ed790;
+  background-color: #499970;
 }
 .body--overweight {
-  background-color: #d7734e;
+  background-color: #b63c7f;
 }
 .body--obese {
-  background-color: #d74e4e;
+  background-color: #ce1d1d;
 }
 
 @media (max-width: 1080px) {

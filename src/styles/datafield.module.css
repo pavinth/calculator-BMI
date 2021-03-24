@@ -16,5 +16,5 @@
   }
   
   .field__input:focus{
-    outline: 2px solid royalblue;
+    outline: 2px solid rgb(73, 190, 190);
   }
