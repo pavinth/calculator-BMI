@@ -1,20 +1,36 @@
 .btn {
     padding: 20px 60px;
-    width: 100%;
+    display:grid;
     font-weight: bold;
+    margin-top:1.5rem;
+    margin-left: 16rem;
     border: 0;
     border-radius: 8px;
     background-color: rgb(204, 128, 77);
+    text-align:center;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease-in;
+    transition: background-color 0.2s ease-in;
   }
   
   .btn:hover {
-    background-color:  rgb(204, 128, 77);
+    background-color:  rgb(125, 109, 168);
+    box-shadow: 2px white;
   }
   
   .btn:focus {
     outline: 2px solid rgba(207, 175, 175, 0.7);
   }
   
+
+  @media (max-width: 640px) {
+    .app {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .brn {
+      padding-left: 0;
+      padding-bottom: 20px;
+    }
+  }

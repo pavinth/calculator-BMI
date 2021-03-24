@@ -41,8 +41,11 @@ function App() {
   };
 
   return (
-    <div className={styles.app}>
-      <div className={styles.app__calc}>
+
+    
+        <div className={styles.app}>
+       <div className={styles.app__calc}>
+       <h1 className= "header" style={{position:"relative", top:"-20px",right:"-170px",fontSize:"10vw;"}} > CALCULATE YOUR BMI </h1>
         <form className='form'>
           <DataField
             labelName='Weight'

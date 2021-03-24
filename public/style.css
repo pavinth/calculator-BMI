@@ -3,23 +3,56 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #4ea7d7;
   font-family: 'Poppins', sans-serif;
-  transition: all 0.5s ease;
+  background: linear-gradient(300deg, #5de6de 0%, #b58ecc 74%);
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
 }
 
+
 .body--underweight {
-  background-color: #be6079;
+  background: linear-gradient(300deg, #c09110 0%, #e06f3a 74%);
+  background-size: 300% 300%;
+  
 }
+
+
 .body--normal {
-  background-color: #499970;
+  background: linear-gradient(300deg, #248d5c 0%, #44866b 74%);
+  background-size: 300% 300%;
+  
 }
+
+@keyframes gradient { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 .body--overweight {
-  background-color: #b63c7f;
+  background: linear-gradient(300deg, #16a5b8 0%, #275488 74%);
+  background-size: 300% 300%;
+  
 }
+
+@keyframes gradient { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 .body--obese {
-  background-color: #ce1d1d;
+  background: linear-gradient(300deg, #a51a31 0%, #640960 74%);
+  background-size: 300% 300%;
+  
 }
+
+@keyframes gradient { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 
 @media (max-width: 1080px) {
   input:focus {
