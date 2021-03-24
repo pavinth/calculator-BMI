@@ -1,0 +1,47 @@
+.app {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app__calc {
+    padding: 30px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .app__result {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 20vh;
+  }
+  .bmi {
+    font-size: 3rem;
+    margin: auto auto 0;
+  }
+  
+  .result {
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto auto;
+  }
+  
+  @media (max-width: 640px) {
+    .app {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .app__result {
+      padding-left: 0;
+      padding-bottom: 20px;
+    }
+  }
+  
