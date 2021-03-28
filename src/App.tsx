@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import styles from './styles/app.module.css';
-import Button from './Components/Button';
-import DataField from './Components/DataField';
+import React, { useState } from "react";
+import styles from "./styles/app.module.css";
+import Button from "./Components/Button";
+import DataField from "./Components/DataField";
 
 function App() {
-  const [weight, setWeight] = useState<string>('');
-  const [height, setHeight] = useState<string>('');
-  const [bmi, setBmi] = useState<string | null>('');
-  const [result, setResult] = useState<string>('');
+  const [weight, setWeight] = useState<string>("");
+  const [height, setHeight] = useState<string>("");
+  const [bmi, setBmi] = useState<string | null>("");
+  const [result, setResult] = useState<string>("");
 
   const generateSpec = (BMI: number): string => {
-    if (BMI <= 18.5) return 'underweight';
-    else if (BMI > 18.5 && BMI < 24.9) return 'normal';
-    else if (BMI > 25 && BMI < 29.9) return 'overweight';
-    else return 'obese';
+    if (BMI <= 18.5) return "underweight";
+    else if (BMI > 18.5 && BMI < 24.9) return "normal";
+    else if (BMI > 25 && BMI < 29.9) return "overweight";
+    else return "obese";
   };
 
   //function to remove background color added
@@ -24,12 +24,12 @@ function App() {
     document.body.classList.remove(`body--obese`);
   };
 
-  //function to genrate bmi from the weight & height
+  //function to generate bmi from the weight & height
   const generateBmi = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     if (height && weight) {
       e.preventDefault();
       const BMI: number = Number(weight) / (Number(height) / 100) ** 2;
-      let speculation: string = '';
+      let speculation: string = "";
 
       speculation = generateSpec(BMI);
       removeBgc();
@@ -41,27 +41,36 @@ function App() {
   };
 
   return (
-
-    
-        <div className={styles.app}>
-       <div className={styles.app__calc}>
-       <h1 className= "header" style={{position:"relative", top:"-20px",right:"-170px",fontSize:"10vw;"}} > CALCULATE YOUR BMI </h1>
-        <form className='form'>
+    <div className={styles.app}>
+      <div className={styles.app__calc}>
+        <h1
+          className="header"
+          style={{
+            position: "relative",
+            top: "-20px",
+            right: "-170px",
+            fontSize: "10vw;",
+          }}
+        >
+          {" "}
+          CALCULATE YOUR BMI{" "}
+        </h1>
+        <form className="form">
           <DataField
-            labelName='Weight'
-            placeHolder='Enter your weight in kg'
+            labelName="Weight"
+            placeHolder="Enter your weight in kg"
             changeFunc={setWeight}
-            type='number'
+            type="number"
             isRequired={true}
           />
           <DataField
-            labelName='Height'
-            placeHolder='Enter your height in cm'
+            labelName="Height"
+            placeHolder="Enter your height in cm"
             changeFunc={setHeight}
-            type='number'
+            type="number"
             isRequired={true}
           />
-          <Button type='submit' value='Calculate BMI' clickFunc={generateBmi} />
+          <Button type="submit" value="Calculate BMI" clickFunc={generateBmi} />
         </form>
       </div>
       <div className={styles.app__result}>

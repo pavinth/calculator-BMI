@@ -1,51 +1,46 @@
 .app {
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .app__calc {
-    position:relative;
-     left:8rem;
-    padding: 3.5rem;
-    width: 40%;
-    height: 35vh;
-    background-color: rgb(82, 82, 74) ;
-    border-radius: 1rem;
-  }
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .app__calc:hover {
-    border: 2px solid white;
-    box-shadow: rgb(58, 57, 57);
+.app__calc {
+  position: relative;
+  left: 8rem;
+  padding: 3.5rem;
+  width: 40%;
+  height: 35vh;
+  background-color: rgb(82, 82, 74);
+  border-radius: 1rem;
+}
 
-  }
-  .form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .app__result {
-    padding-left:12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 20vh;
-  }
-  .bmi {
-    font-size: 3rem;
-    margin: auto auto 0;
-  }
-  
-  .result {
-    font-size: 2rem;
-    display: block;
-    margin: 0 auto auto;
-  }
+.app__calc:hover {
+  border: 2px solid white;
+  box-shadow: rgb(58, 57, 57);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.app__result {
+  padding-left: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 20vh;
+}
+.bmi {
+  font-size: 3rem;
+  margin: auto auto 0;
+}
 
-
-
-  
+.result {
+  font-size: 2rem;
+  display: block;
+  margin: 0 auto auto;
+}
