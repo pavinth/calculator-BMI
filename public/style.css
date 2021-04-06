@@ -4,28 +4,28 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #d9afd9;
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  background-color: #b9b1b9;
+  background-image: linear-gradient(0deg, #b8b0b8 20%, #676969 60%);
   animation: gradient 20s ease infinite;
 }
 
 .body--underweight {
-  background: linear-gradient(300deg, #c09110 0%, #e06f3a 74%);
+  background: linear-gradient(300deg, #e06f3a 70%, #494848 10%);
   background-size: 300% 300%;
 }
 
 .body--normal {
-  background: linear-gradient(300deg, #248d5c 0%, #44866b 74%);
+  background: linear-gradient(300deg, #248d5c 70%, #494848 10%);
   background-size: 300% 300%;
 }
 
 .body--overweight {
-  background: linear-gradient(300deg, #16a5b8 0%, #275488 74%);
+  background: linear-gradient(300deg, #16a5b8 70%, #494848 10%);
   background-size: 300% 300%;
 }
 
 .body--obese {
-  background: linear-gradient(300deg, #a51a31 0%, #640960 74%);
+  background: linear-gradient(300deg, #d42222 70%, #494848 10%);
   background-size: 300% 300%;
 }
 

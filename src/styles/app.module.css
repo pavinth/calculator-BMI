@@ -10,11 +10,26 @@
 .app__calc {
   position: relative;
   left: 8rem;
-  padding: 3.5rem;
-  width: 40%;
-  height: 35vh;
-  background-color: rgb(82, 82, 74);
+  padding: 6rem;
+  min-width: 40%;
+  height: auto;
   border-radius: 1rem;
+  box-shadow: 8px 8px 10px rgb(224, 218, 218);
+  background: linear-gradient(-60deg, #e06f3a, #248d5c, #bd4040, #44bccc);
+  background-size: 400% 500%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .app__calc:hover {

@@ -48,7 +48,7 @@ function App() {
           style={{
             position: "relative",
             top: "-20px",
-            right: "-170px",
+            right: "-130px",
             fontSize: "10vw;",
           }}
         >
