@@ -29,11 +29,9 @@ body {
   background-size: 300% 300%;
 }
 
-@media (max-width: 1080px) {
-  input:focus {
-    outline: none !important;
+@media only screen and (max-width: 479px) {
+  body {
+    width: 100%;
+    height:40%;
   }
-  button:focus {
-    outline: none !important;
   }
-}

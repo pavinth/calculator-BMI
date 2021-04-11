@@ -1,24 +1,38 @@
-.field{
-    margin-bottom: 20px;
-  }
-  .field__label{
-    font-size: .95rem;
-    width: 100%;
-    margin-bottom: 3px;
-    display: block;
-    color: rgba(f, f, f, 0.6);
-  }
-  
-  .field__input{
-    padding: 16px;
-    min-width: 16rem;
-    border: 0;
-    border-radius: 8px;
-    width: 95%;
-    height: 10%;
-  }
-  
-  .field__input:focus{
-    outline: 2px solid rgb(73, 190, 190);
+.field {
+  margin-bottom: 20px;
+}
+.field__label {
+  font-size: 0.95rem;
+  width: 100%;
+  margin-bottom: 3px;
+  display: block;
+  color: rgba(f, f, f, 0.6);
+}
 
+.field__input {
+  padding: 16px;
+  min-width: 16rem;
+  border: 0;
+  border-radius: 8px;
+  width: 95%;
+  height: 10%;
+}
+
+.field__input:focus {
+  outline: 2px solid rgb(73, 190, 190);
+}
+
+@media only screen and (max-width: 479px) {
+  .field {
+    width: 10%;
   }
+  .field__label {
+    width: 5%;
+  }
+  .field__input {
+    width: 5%;
+  }
+  .field__input:focus {
+    width: 5%;
+  }
+}
