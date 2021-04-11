@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #b9b1b9;
+  background-image: linear-gradient(0deg, #b8b0b8 20%, #676969 60%);
+  animation: gradient 20s ease infinite;
+}
+
+.body--underweight {
+  background: linear-gradient(300deg, #e06f3a 70%, #494848 10%);
+  background-size: 300% 300%;
+}
+
+.body--normal {
+  background: linear-gradient(300deg, #248d5c 70%, #494848 10%);
+  background-size: 300% 300%;
+}
+
+.body--overweight {
+  background: linear-gradient(300deg, #16a5b8 70%, #494848 10%);
+  background-size: 300% 300%;
+}
+
+.body--obese {
+  background: linear-gradient(300deg, #d42222 70%, #494848 10%);
+  background-size: 300% 300%;
+}
+
+@media only screen and (min-width: 300px) {
+  /* For mobile phones: */
+  body {
+    width: 100%;
+  }
+
+  .body--underweight {
+    width: 100%;
+  }
+  .body--normal {
+    width: 100%;
+  }
+  .body--overweight {
+    width: 100%;
+  }
+  .body--obese {
+    width: 100%;
+  }
+}
