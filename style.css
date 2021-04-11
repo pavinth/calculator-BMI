@@ -29,22 +29,9 @@ body {
   background-size: 300% 300%;
 }
 
-@media only screen and (min-width: 300px) {
-  /* For mobile phones: */
+@media only screen and (max-width: 479px) {
   body {
     width: 100%;
+    height:40%;
   }
-
-  .body--underweight {
-    width: 100%;
   }
-  .body--normal {
-    width: 100%;
-  }
-  .body--overweight {
-    width: 100%;
-  }
-  .body--obese {
-    width: 100%;
-  }
-}
